@@ -1,0 +1,38 @@
+{
+  "private": false,
+  "name": "guste-portfolio-studio",
+  "version": "1.0.0",
+  "author": "Mantas Mikalauskas <mikalauskas.it@gmail.com>",
+  "scripts": {
+    "deploy": "npm run graphql-deploy && npm run sanity-deploy",
+    "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
+    "graphql-deploy": "sanity graphql deploy --playground",
+    "sanity-deploy": "sanity deploy",
+    "lint": "eslint .",
+    "start": "sanity start",
+    "start-shared": "sanity start --host 0.0.0.0 --port 3334",
+    "test": "sanity check"
+  },
+  "dependencies": {
+    "@sanity/base": "^0.141.6",
+    "@sanity/components": "^0.141.6",
+    "@sanity/core": "^0.141.6",
+    "@sanity/default-layout": "^0.141.6",
+    "@sanity/default-login": "^0.141.5",
+    "@sanity/desk-tool": "^0.141.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-config-standard-react": "^8.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}

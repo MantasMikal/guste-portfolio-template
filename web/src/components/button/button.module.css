@@ -1,0 +1,24 @@
+@import '../../styles/vars.css';
+
+.button {
+  font-family: inherit;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  border-radius: 5px;
+  padding: 0.125rem 0.325rem;
+  float: right;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.btnActive {
+  background-color: var(--color-black); /* Green */
+  color: var(--color-white);
+}

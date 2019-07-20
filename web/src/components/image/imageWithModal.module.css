@@ -1,0 +1,78 @@
+@import '../../styles/media-queries.css';
+
+.Overlay {
+  @media (--media-max-small) {
+    margin: 0.325rem;
+  }
+}
+
+.border {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0rem 1rem 0px rgba(0,0,0,0.12);
+}
+
+.zoomedImage {
+  /* margin: auto; */
+  /* width: 95vh;
+  margin: auto auto;
+  @media (--media-max-medium) {
+    width: 70vh;
+  }
+  @media (--media-max-small) {
+    width: 55vh;
+  } */
+  width: 100%
+}
+
+.portrait {
+  height: 90%;
+  width: 35vw;
+  margin: auto auto;
+  @media (--media-max-medium) {
+    height: 80%;
+    width: 900px;
+  }
+  @media (--media-max-small) {
+    height: 75%;
+    width: 90%;
+  }
+}
+
+.square {
+  /* height: 100%; */
+  width: 95vh;
+  margin: auto auto;
+  @media (--media-max-medium) {
+    width: 70vh;
+  }
+  @media (--media-max-small) {
+    width: 55vh;
+  }
+}
+
+.landspace {
+  width: 80vw;
+  margin: auto auto;
+  @media (--media-max-medium) {
+    width: 80vw;
+  }
+  @media (--media-max-small) {
+    width: 80vw;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hoverEffect {
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

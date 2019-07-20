@@ -1,0 +1,22 @@
+@import '../../styles/media-queries.css';
+
+.grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-gap: 0.625em;
+  margin: 0.625em auto;
+  width: 100%;
+
+  @media (--media-max-medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (--media-max-small) {
+    display: block;
+  }
+}
+
+
+.gridAutoRows {
+  grid-auto-columns: 1fr;
+}
