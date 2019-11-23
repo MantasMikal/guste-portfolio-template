@@ -33,7 +33,7 @@
     "gatsby-plugin-sharp": "^2.2.8",
     "gatsby-plugin-sitemap": "^2.2.3",
     "gatsby-source-sanity": "^5.0.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.13",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.8.6",
